@@ -277,3 +277,42 @@ html, body {
   background-color: #000;
   color: white;
 }
+/* Mobile Nav Styles */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.mobile-menu-icon .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    position: static;
+    transform: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+}
