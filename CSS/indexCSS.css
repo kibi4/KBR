@@ -293,8 +293,8 @@ html, body {
   transition: 0.3s;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
+  /* Navbar Adjustments */
   .navbar {
     position: static;
     transform: none;
@@ -315,4 +315,34 @@ html, body {
   .mobile-menu-icon {
     display: flex;
   }
+
+  /* Hero Section Mobile Styling */
+  .hero-content {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 0.75rem auto;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.hero-button {
+  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
 }
