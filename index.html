@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KBR Developments - Home</title>
+  <link rel="stylesheet" href="CSS/indexCSS.css">
+  <link rel="stylesheet" href="CSS/indexMainPic.css">
+  <link rel="stylesheet" href="CSS/footCSS.css">
+</head>
+<body>
+
+  <header class="header-centered">
+    <div class="header-content">
+      <div class="logo">
+        <img src="Images/KBR Logo.jpg" alt="KBR Logo">
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="call-button">
+        <a href="tel:4164770815">
+          <span class="call-heading">Call Us Today!</span><br>
+          <span class="phone-number">416 477 0815</span>
+        </a>
+      
+</div>
+<div class="mobile-menu-icon">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section" style="background: url('Images/indexMainPic.jpg') no-repeat center center / cover;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Your Dream Project Starts Here</h1>
+      <p>Professional construction services you can trust.</p>
+      <a href="services.html" class="hero-button">Our Services</a>
+      <a href="contact.html" class="hero-button">Get a Quote</a>
+    </div>
+  </section>
+
+  <section class="about-snippet">
+    <h2>Who We Are</h2>
+    <p>At KBR Developments, we specialize in high-quality construction and renovations across Ontario. With over 30 years of experience, we build with integrity and precision.</p>
+    <a href="about.html" class="about-button">Learn More →</a>
+  </section>
+
+  <section class="services-preview" style="background: url('Images/Main2.jpg') no-repeat center center / cover;">
+    <div class="overlay"></div>
+    <h2>Our Core Services</h2>
+    <div class="services-grid">
+      <a href="services.html" class="service-card">
+        <img src="Images/image.png" alt="Home Renovations">
+        <h3>Home Renovations</h3>
+        <p>Complete transformations including additions, repairs, and upgrades to your existing space.</p>
+      </a>
+      <a href="services.html" class="service-card">
+        <img src="Images/kitchen.png" alt="Kitchen & Bathroom Remodeling">
+        <h3>Kitchen & Bathroom Remodeling</h3>
+        <p>Modern, functional, and elegant upgrades tailored to your style and needs.</p>
+      </a>
+      <a href="services.html" class="service-card">
+        <img src="Images/house.png" alt="New Home Construction">
+        <h3>New Home Construction</h3>
+        <p>From blueprint to build, we craft custom homes with quality and precision.</p>
+      </a>
+      <a href="services.html" class="service-card">
+        <img src="Images/drywall.png" alt="Drywall & Interior">
+        <h3>Drywall & Interior Finishing</h3>
+        <p>Expert drywall installation, repair, and high-end finishing services for any project.</p>
+      </a>
+    </div>
+    <a href="services.html" class="all-services-button">All Services →</a>
+  </section>
+
+  <section class="gallery-preview">
+    <h2>Featured Projects</h2>
+    <div class="gallery-grid">
+      <div class="project-card">
+        <img src="Images/washroom.jpg" alt="Washroom Project">
+        <h3>Washroom Pictures</h3>
+        <p>We modernized this bathroom into a sleek, functional space.</p>
+      </div>
+      <div class="project-card">
+        <img src="Images/housereno.jpg" alt="Basement Renovation">
+        <h3>Basement Renovation</h3>
+        <p>A basement turned into a warm, livable entertainment area.</p>
+      </div>
+    </div>
+    <a href="gallery.html" class="gallery-button">See Full Gallery →</a>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Ready to start your project?</h2>
+    <a href="contact.html" class="cta-button">Contact Us Now</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>KBR Developments</h3>
+        <p>Building with integrity across Ontario.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: kbrtoronto@gmail.com</p>
+        <p>Phone: (416) 477 0815</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KBR Developments. All rights reserved.</p>
+    </div>
+  </footer>
+<script>
+  const menuIcon = document.querySelector('.mobile-menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
