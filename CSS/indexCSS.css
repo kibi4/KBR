@@ -1,0 +1,318 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header-centered {
+  background-color: #000;
+  padding: 1rem 2rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo img {
+  max-width: 220px;
+  height: auto;
+}
+
+.navbar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0101FE;
+}
+
+.call-button a {
+  display: inline-block;
+  background-color: #0101FE;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.call-button a:hover {
+  background-color: white;
+  color: #0101FE;
+}
+
+.call-button .call-heading {
+  font-size: 1rem;
+}
+
+.call-button .phone-number {
+  font-size: 1.5rem;
+}
+
+/* About Snippet */
+.about-snippet {
+  background-color: #000;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-snippet h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-snippet p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.about-button {
+  display: inline-block;
+  background-color: #0101FE;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about-button:hover {
+  background-color: white;
+  color: #0101FE;
+  cursor: pointer;
+}
+
+/* Services Section */
+.services-preview {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #111;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background-color: #0101FE;
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.all-services-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #0101FE;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.all-services-button:hover {
+  background-color: white;
+  color: #0101FE;
+}
+
+/* Gallery Preview */
+.gallery-preview {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.gallery-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  color: #ccc;
+}
+
+.gallery-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #0101FE;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.gallery-button:hover {
+  background-color: white;
+  color: #0101FE;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: #0101FE;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.cta-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #0101FE;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #000;
+  color: white;
+}
+/* Mobile Nav Styles */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.mobile-menu-icon .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    position: static;
+    transform: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+}
