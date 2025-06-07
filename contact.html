@@ -32,6 +32,12 @@
           <span class="phone-number">416 477 0815</span>
         </a>
       </div>
+      <div class="mobile-menu-icon">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+
     </div>
   </header>
 
@@ -101,5 +107,14 @@
       <p>&copy; 2025 KBR Developments. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+  const menuIcon = document.querySelector('.mobile-menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>
